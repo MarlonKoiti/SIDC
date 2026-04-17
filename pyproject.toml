@@ -1,0 +1,23 @@
+[project]
+name = "sidc"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Marlon Koiti"}
+]
+requires-python = ">=3.11"
+dependencies = [
+    "pandas (>=3.0.2,<4.0.0)",
+    "pyarrow (>=23.0.1,<24.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pre-commit (>=4.5.1,<5.0.0)",
+    "ruff (>=0.15.11,<0.16.0)"
+]
